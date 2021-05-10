@@ -1,0 +1,7 @@
+C:\Users\shivanan\Documents\Study\github repositories\projects-for-quick-access\Learning\Design patterns with C# and .NET\Open-Closed Principle\OCP\OCP\obj\Debug\OCP.csprojAssemblyReference.cache
+C:\Users\shivanan\Documents\Study\github repositories\projects-for-quick-access\Learning\Design patterns with C# and .NET\Open-Closed Principle\OCP\OCP\obj\Debug\OCP.csproj.CoreCompileInputs.cache
+C:\Users\shivanan\Documents\Study\github repositories\projects-for-quick-access\Learning\Design patterns with C# and .NET\Open-Closed Principle\OCP\OCP\bin\Debug\OCP.exe.config
+C:\Users\shivanan\Documents\Study\github repositories\projects-for-quick-access\Learning\Design patterns with C# and .NET\Open-Closed Principle\OCP\OCP\bin\Debug\OCP.exe
+C:\Users\shivanan\Documents\Study\github repositories\projects-for-quick-access\Learning\Design patterns with C# and .NET\Open-Closed Principle\OCP\OCP\bin\Debug\OCP.pdb
+C:\Users\shivanan\Documents\Study\github repositories\projects-for-quick-access\Learning\Design patterns with C# and .NET\Open-Closed Principle\OCP\OCP\obj\Debug\OCP.exe
+C:\Users\shivanan\Documents\Study\github repositories\projects-for-quick-access\Learning\Design patterns with C# and .NET\Open-Closed Principle\OCP\OCP\obj\Debug\OCP.pdb
