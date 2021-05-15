@@ -1,0 +1,7 @@
+C:\Users\shivanan\Documents\Study\github repositories\Learning\Design patterns with C# and .NET\Builder\Builder_One\Builder_One\bin\Debug\Builder_One.exe.config
+C:\Users\shivanan\Documents\Study\github repositories\Learning\Design patterns with C# and .NET\Builder\Builder_One\Builder_One\bin\Debug\Builder_One.exe
+C:\Users\shivanan\Documents\Study\github repositories\Learning\Design patterns with C# and .NET\Builder\Builder_One\Builder_One\bin\Debug\Builder_One.pdb
+C:\Users\shivanan\Documents\Study\github repositories\Learning\Design patterns with C# and .NET\Builder\Builder_One\Builder_One\obj\Debug\Builder_One.csprojAssemblyReference.cache
+C:\Users\shivanan\Documents\Study\github repositories\Learning\Design patterns with C# and .NET\Builder\Builder_One\Builder_One\obj\Debug\Builder_One.csproj.CoreCompileInputs.cache
+C:\Users\shivanan\Documents\Study\github repositories\Learning\Design patterns with C# and .NET\Builder\Builder_One\Builder_One\obj\Debug\Builder_One.exe
+C:\Users\shivanan\Documents\Study\github repositories\Learning\Design patterns with C# and .NET\Builder\Builder_One\Builder_One\obj\Debug\Builder_One.pdb
