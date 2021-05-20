@@ -51,7 +51,7 @@ namespace Factory_Four
 
     // If a factory for a new type of drink is added then the Enum in the below class needs to be altered
     // This is a clear violation of Open-Close principle
-    // Refer Factory_Four project for the new implementation.
+    // Refer Factory_Five project for the new implementation.
     public class HotDrinkMachine
     {
         public enum AvailableDrinks
