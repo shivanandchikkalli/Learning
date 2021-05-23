@@ -1,4 +1,16 @@
+# There are five SOLID principles:
+1. Single Responsibility Principle (SRP)
+2. Open Closed Principle (OCP)
+3. Liskov Substitution Principle (LSP)
+4. Interface Segregation Principle (ISP)
+5. Dependency Inversion Principle (DIP)
+
+----
+
 # Design patterns with C# and .NET
+Design patterns provides the solutions to software design problems and used in real-world application design/development extensively.
+Design patterns are all about clean architecture, reusability and implementing solution which are easily maintainable and scalable.
+There are three different types of design patterns.
 
 ## Creational Design Pattern
 1. Factory Method
