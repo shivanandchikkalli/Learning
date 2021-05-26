@@ -55,7 +55,7 @@ namespace DelegateFactories
 
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main2(string[] args)
         {
             var builder = new ContainerBuilder();
 
