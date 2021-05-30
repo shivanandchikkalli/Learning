@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autofac defaultAssembly="JSONConfiguration">
+  <components name="0">
+    <type>JSONConfiguration.Addition, JSONConfiguration</type>
+    <services name="0" type="JSONConfiguration.IOperation" />
+    <injectProperties>true</injectProperties>
+  </components>
+  <components name="1">
+    <type>JSONConfiguration.Multiplication, JSONConfiguration</type>
+    <services name="0" type="JSONConfiguration.IOperation" />
+    <injectProperties>true</injectProperties>
+    <parameters>
+      <places>4</places>
+    </parameters>
+  </components>
+</autofac>

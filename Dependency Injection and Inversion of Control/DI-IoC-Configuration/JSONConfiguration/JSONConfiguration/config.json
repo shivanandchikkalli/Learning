@@ -1,0 +1,28 @@
+{
+  "defaultAssembly": "JSONConfiguration",
+  // Registering Components
+  //"components": [
+  //  {
+  //    "type": "JSONConfiguration.Addition",
+  //    "services": [
+  //      {
+  //        "type": "JSONConfiguration.IOperation"
+  //      }
+  //    ]
+  //  },
+  //  {
+  //    "type": "JSONConfiguration.Multiplication",
+  //    "services": [
+  //      {
+  //        "type": "JSONConfiguration.IOperation"
+  //      }
+  //    ]
+  //  }
+  //],
+  // Registering Modules
+  "modules": [
+    {
+      "type": "JSONConfiguration.CalculationModule"
+    }
+  ]
+}
