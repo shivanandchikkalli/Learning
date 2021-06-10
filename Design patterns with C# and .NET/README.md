@@ -52,6 +52,9 @@ There are three different types of design patterns.
 
 1. [.NET Design Patterns in C# - Gang of Four (GOF) - Dofactory](https://dofactory.com/net/design-patterns)
 2. [Design Patterns in C# and .NET](https://www.udemy.com/course/design-patterns-csharp-dotnet/)
+3. [Design Patterns in Object Oriented Programming](https://youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
+4. [Solid Design Principles](https://youtube.com/playlist?list=PL6n9fhu94yhXjG1w2blMXUzyDrZ_eyOme)
+5. [Design Patterns tutorial for beginners](https://youtube.com/playlist?list=PL6n9fhu94yhUbctIoxoVTrklN3LMwTCmd)
 
 
 
