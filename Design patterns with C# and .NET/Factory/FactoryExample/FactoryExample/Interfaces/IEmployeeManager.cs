@@ -7,8 +7,8 @@ namespace FactoryExample.Interfaces
 {
     public interface IEmployeeManager
     {
-        double GetPay(IBaseEmployee employee);
+        double GetPay();
 
-        double GetTotalEarnings(IBaseEmployee employee);
+        double GetTotalEarnings();
     }
 }

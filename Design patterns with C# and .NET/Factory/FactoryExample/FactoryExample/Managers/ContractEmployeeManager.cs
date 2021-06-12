@@ -8,26 +8,33 @@ namespace FactoryExample.Managers
 {
     public class ContractEmployeeManager : IEmployeeManager
     {
-        public double GetPay(IBaseEmployee employee)
+        private readonly IBaseEmployee _employee;
+
+        public ContractEmployeeManager(IBaseEmployee employee)
         {
-            if (employee.GetType().IsAssignableFrom(typeof(ContractEmployee)))
-                return ((ContractEmployee)employee).HourlyRate;
+            _employee = employee;
+        }
+
+        public double GetPay()
+        {
+            if (_employee.GetType().IsAssignableFrom(typeof(ContractEmployee)))
+                return ((ContractEmployee)_employee).HourlyRate;
             throw new Exception("Not a Contract Employee");
         }
 
-        public double GetTotalEarnings(IBaseEmployee employee)
+        public double GetTotalEarnings()
         {
-            if(!employee.GetType().IsAssignableFrom(typeof(ContractEmployee)))
+            if(!_employee.GetType().IsAssignableFrom(typeof(ContractEmployee)))
                 throw new Exception("Not a Contract Employee");
-            var emp = (ContractEmployee)employee;
+            var emp = (ContractEmployee)_employee;
             return emp.HourlyRate * (emp.ContractEndDate - emp.ContractStartDate).Days * emp.WorkingHoursPerDay;
         }
 
-        public double GetTotalWorkHours(IBaseEmployee employee)
+        public double GetTotalWorkHours()
         {
-            if (!employee.GetType().IsAssignableFrom(typeof(ContractEmployee)))
+            if (!_employee.GetType().IsAssignableFrom(typeof(ContractEmployee)))
                 throw new Exception("Not a Contract Employee");
-            var emp = (ContractEmployee) employee;
+            var emp = (ContractEmployee)_employee;
             return (emp.ContractEndDate - emp.ContractStartDate).Days * emp.WorkingHoursPerDay;
         }
     }

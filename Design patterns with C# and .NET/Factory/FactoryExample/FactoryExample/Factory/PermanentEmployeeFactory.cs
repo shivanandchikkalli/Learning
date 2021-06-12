@@ -15,13 +15,13 @@ namespace FactoryExample.Factory
 
         protected override IEmployeeManager Create()
         {
-            var permanentEmployeeManager = new PermanentEmployeeManager();
+            var permanentEmployeeManager = EmployeeManagerFactory.GetEmployeeManager(Employee);
             if (!Employee.GetType().IsAssignableFrom(typeof(PermanentEmployee))) 
                 return permanentEmployeeManager;
             // Employee Specific Initialization
             var emp = (PermanentEmployee) Employee;
-            emp.JoinedDate = PermanentEmployeeManager.GetJoinedDate(emp);
-            emp.MonthlySalary = permanentEmployeeManager.GetPay(emp);
+            emp.JoinedDate = ((PermanentEmployeeManager)permanentEmployeeManager).GetJoinedDate();
+            emp.MonthlySalary = permanentEmployeeManager.GetPay();
 
             return permanentEmployeeManager;
         }

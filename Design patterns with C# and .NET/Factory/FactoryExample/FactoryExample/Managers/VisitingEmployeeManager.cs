@@ -8,26 +8,33 @@ namespace FactoryExample.Managers
 {
     public class VisitingEmployeeManager : IEmployeeManager
     {
-        public double GetPay(IBaseEmployee employee)
+        private readonly IBaseEmployee _employee;
+
+        public VisitingEmployeeManager(IBaseEmployee employee)
         {
-            if (!employee.GetType().IsAssignableFrom(typeof(VisitingEmployee)))
-                throw new Exception("Not a Visiting Employee");
-            return ((VisitingEmployee) employee).RatePerVisit;
+            _employee = employee;
         }
 
-        public double GetTotalEarnings(IBaseEmployee employee)
+        public double GetPay()
         {
-            if (!employee.GetType().IsAssignableFrom(typeof(VisitingEmployee)))
+            if (!_employee.GetType().IsAssignableFrom(typeof(VisitingEmployee)))
                 throw new Exception("Not a Visiting Employee");
-            var emp = (VisitingEmployee) employee;
+            return ((VisitingEmployee) _employee).RatePerVisit;
+        }
+
+        public double GetTotalEarnings()
+        {
+            if (!_employee.GetType().IsAssignableFrom(typeof(VisitingEmployee)))
+                throw new Exception("Not a Visiting Employee");
+            var emp = (VisitingEmployee) _employee;
             return emp.RatePerVisit * emp.VisitCount;
         }
 
-        public static int GetNumberOfVisits(IBaseEmployee employee)
+        public int GetNumberOfVisits()
         {
-            if (!employee.GetType().IsAssignableFrom(typeof(VisitingEmployee)))
+            if (!_employee.GetType().IsAssignableFrom(typeof(VisitingEmployee)))
                 throw new Exception("Not a Visiting Employee");
-            var emp = (VisitingEmployee)employee;
+            var emp = (VisitingEmployee)_employee;
             return emp.VisitCount;
         }
     }

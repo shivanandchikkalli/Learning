@@ -18,7 +18,7 @@ namespace FactoryExample.Factory
         public IBaseEmployee CommonInitializations()
         {
             var manager = this.Create();
-            Employee.Bonus = manager.GetPay(Employee) * 5;
+            Employee.Bonus = manager.GetPay() * 5;
             return Employee;
         }
 

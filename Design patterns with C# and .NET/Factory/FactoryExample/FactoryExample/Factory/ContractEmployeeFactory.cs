@@ -15,12 +15,11 @@ namespace FactoryExample.Factory
 
         protected override IEmployeeManager Create()
         {
-            var contractEmployeeManager = new ContractEmployeeManager();
+            var contractEmployeeManager = EmployeeManagerFactory.GetEmployeeManager(Employee);
             if (!Employee.GetType().IsAssignableFrom(typeof(ContractEmployee)))
                 return contractEmployeeManager;
             // Employee Specific Initialization
-            var emp = (ContractEmployee)Employee;
-            emp.HourlyRate = contractEmployeeManager.GetPay(emp);
+            ((ContractEmployee)Employee).HourlyRate = contractEmployeeManager.GetPay();
 
             return contractEmployeeManager;
         }

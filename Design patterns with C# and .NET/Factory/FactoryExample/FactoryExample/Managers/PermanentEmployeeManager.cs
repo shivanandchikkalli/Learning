@@ -8,27 +8,34 @@ namespace FactoryExample.Managers
 {
     public class PermanentEmployeeManager : IEmployeeManager
     {
-        public double GetPay(IBaseEmployee employee)
+        private readonly IBaseEmployee _employee;
+
+        public PermanentEmployeeManager(IBaseEmployee employee)
         {
-            if (employee.GetType().IsAssignableFrom(typeof(PermanentEmployee)))
-                return ((PermanentEmployee) employee).MonthlySalary;
+            _employee = employee;
+        }
+
+        public double GetPay()
+        {
+            if (_employee.GetType().IsAssignableFrom(typeof(PermanentEmployee)))
+                return ((PermanentEmployee) _employee).MonthlySalary;
             throw new Exception("Not a Permanent Employee");
         }
 
-        public double GetTotalEarnings(IBaseEmployee employee)
+        public double GetTotalEarnings()
         {
-            if (!employee.GetType().IsAssignableFrom(typeof(PermanentEmployee)))
+            if (!_employee.GetType().IsAssignableFrom(typeof(PermanentEmployee)))
                 throw new Exception("Not a Permanent Employee");
-            var emp = (PermanentEmployee)employee;
+            var emp = (PermanentEmployee)_employee;
             return emp.MonthlySalary * (((DateTime.Now.Year - emp.JoinedDate.Year) * 12) + DateTime.Now.Month -
                                         emp.JoinedDate.Month);
         }
 
-        public static DateTime GetJoinedDate(IBaseEmployee employee)
+        public DateTime GetJoinedDate()
         {
-            if (!employee.GetType().IsAssignableFrom(typeof(PermanentEmployee)))
+            if (!_employee.GetType().IsAssignableFrom(typeof(PermanentEmployee)))
                 throw new Exception("Not a Permanent Employee");
-            var emp = (PermanentEmployee)employee;
+            var emp = (PermanentEmployee)_employee;
             return emp.JoinedDate;
         }
     }

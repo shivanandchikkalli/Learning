@@ -47,7 +47,7 @@ namespace FactoryExample
             };
 
 
-            var baseEmployeeFactory = EmployeeFactory.GetFactory(contractEmployee);
+            var baseEmployeeFactory = EmployeeFactory.GetFactory(permanentEmployee);
 
             var employee = baseEmployeeFactory.CommonInitializations();
 
