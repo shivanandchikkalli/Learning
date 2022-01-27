@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+
+before_install:
+  - docker build -t github-frontend -f Dockerfile.dev .
+
+
+script:
+  - docker run github-frontend npm run test -- --coverage
